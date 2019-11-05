@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="bg-photo content">
+		<div class="center">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h1 class="text-white title">Encurte seus links.</h1>
+			</div>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-5">
+				<p class="text text-white">Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</p>
+			</div>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 mb-5" style="display: flex; display: -ms-flexbox;">
+				<input class="ipt-link" type="text" id="link" placeholder="Cole o seu link aqui">
+				<i class="icon" id="close" hidden onclick="reset()">x</i>
+			</div>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+				<button class="btn-encurtar" type="submit" onclick="getLink()">ENCURTAR</button>
+			</div>	
+		</div>
+	</div>
+	<!-- TOP 5 dos links mais acessados -->
+	<div class="content mt-20">
+		<div class="center">
+			<p class="top-5">TOP 5</p>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bottom mt-5">
+				<a class="links" id="link_1" href="#">1° link mais acessado</a><p class="views" id="count_views_1">0</p>
+			</div>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bottom mt-5">
+				<a class="links" id="link_2" href="#">2° link mais acessado</a><p class="views" id="count_views_2">0</p>
+			</div>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bottom mt-5">
+				<a class="links" id="link_3" href=""#>3° link mais acessado</a><p class="views" id="count_views_3">0</p>
+			</div>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bottom mt-5">
+				<a class="links"  id="link_4" href="#">4° link mais acessado</a><p class="views" id="count_views_4">0</p>
+			</div>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bottom mt-5">
+				<a class="links" id="link_5" href="#">5° link mais acessado</a><p class="views" id="count_views_5">0</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-12 col-md-12 col-lg-12 bg-gray">
+		<div class="triangle">
+		</div>
+	</div>
+	<div class="hits-section col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+		<p class="mb-3 hits">HITS</p>
+		<input class="mb-1-5 clicks" id="number_clicks" type="text" value="0" disabled style="text-align: center;">
+		<p class="click-text">Cliques em links</p>
+	</div>
+	<div class="footer">
+		<p class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xl-10 chr-dc">chr.dc</p>
+		<div class="icons">
+			<span class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"><img src="Media/icon-twitter.png"></span>
+			<span class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"><img src="Media/icon-facebook.png"></span>
+		</div>
+	</div>
+	<script src="JavaScript/script.js"></script>
+</body>
+</html>
